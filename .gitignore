@@ -1,1 +1,5 @@
+# Ignore notes file
 notes.md
+
+# Ignore all executable files
+*.exe
