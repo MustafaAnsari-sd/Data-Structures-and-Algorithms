@@ -13,18 +13,33 @@ int main(){
         }
     }
     cout<<endl;
-    for(int i=0;i<m; i++){
-        if(i%2==0){
-            for(int j=0; j<n; j++){
-                cout<<arr[i][j]<<" ";
-            }
-            cout<<endl;
+    // for(int i=0;i<m; i++){
+    //     if(i%2==0){
+    //         for(int j=0; j<n; j++){
+    //             cout<<arr[i][j]<<" ";
+    //         }
+    //         cout<<endl;
+    //     }
+    //     else{
+    //         for(int j= n-1; j>=0; j--){
+    //             cout<<arr[i][j]<<" ";
+    //         }
+    //         cout<<endl;
+    //     }
+    // }
+
+// column wise traversal 
+for(int i=0; i<n; i++){
+    if(i%2==0){
+        for(int j=0; j<m; j++){
+            cout<<arr[j][i]<<" ";
         }
-        else{
-            for(int j= n-1; j>=0; j--){
-                cout<<arr[i][j]<<" ";
-            }
-            cout<<endl;
+        
+    }
+    else{
+        for(int j=m-1; j>=0; j--){
+            cout<<arr[j][i]<<" ";
         }
     }
+}
 }
