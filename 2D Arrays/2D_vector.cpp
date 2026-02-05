@@ -23,5 +23,6 @@ int main(){
     v.push_back(v2); //{4,5}
     v.push_back(v3); //{7,8,9,10,11,12}
 
-    cout<<v[2][4];  //11
+    cout<<v[2][4]<<endl;  //11
+    cout<<v[0][2]; //3
 }
